@@ -97,7 +97,7 @@ body {
   }
   
 
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 281px) and (max-width: 768px) {
     .flight-detail-container {
       padding: 25px;
       width: 85%;
