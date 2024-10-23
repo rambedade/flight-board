@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .flight-detail-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .flight-detail-title {
+    font-size: 2rem;
+    color: #0074d9;
+    margin-bottom: 20px;
+  }
+  
+  .flight-detail-content {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .flight-detail-content p {
+    margin: 10px 0;
+  }
+  
+  .flight-detail-content p strong {
+    color: #0074d9;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0074d9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-link:hover {
+    color: #005bb5;
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 375px) {
+    .flight-detail-container {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .flight-detail-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .flight-detail-content {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    .back-link {
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  @media (min-width: 376px) and (max-width: 480px) {
+    .flight-detail-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .flight-detail-title {
+      font-size: 1.7rem;
+    }
+  
+    .flight-detail-content {
+      font-size: 1.1rem;
+    }
+  
+    .back-link {
+      margin-top: 18px;
+      font-size: 1rem;
+    }
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .flight-detail-container {
+      padding: 25px;
+      width: 85%;
+    }
+  
+    .flight-detail-title {
+      font-size: 1.8rem;
+    }
+  
+    .flight-detail-content {
+      font-size: 1.1rem;
+    }
+  
+    .back-link {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+  }
+  
