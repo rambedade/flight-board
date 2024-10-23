@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchFlights } from '../api';
 import { useError } from '../contexts/ErrorContext';
-import './FlightTable.css'; 
+import './FlightTable.css';
 
 interface Flight {
   id: string;
@@ -24,7 +24,9 @@ const FlightTable: React.FC = () => {
     setError(null);
     try {
       const data = await fetchFlights();
-      setFlights(data);
+      
+      // Type assertion to ensure data is treated as Flight[]
+      setFlights(data as Flight[]);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Unknown error occurred while fetching flights.');
     } finally {
@@ -51,8 +53,7 @@ const FlightTable: React.FC = () => {
     <div className="flight-board-container">
       <div className="flight-board-header">
         <h1>Departures</h1>
-        <h2>
-        Pune International Airport (PIP)</h2>
+        <h2>Pune International Airport (PIP)</h2>
       </div>
       <table className="flight-table">
         <thead>

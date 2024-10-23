@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/mockdata.ts","./src/vite-env.d.ts","./src/components/errorboundary.tsx","./src/components/flightdetail.tsx","./src/components/flighttable.tsx","./src/contexts/errorcontext.tsx"],"version":"5.6.3"}
